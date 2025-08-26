@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Background */
+.app-container {
   min-height: 100vh;
+  background: linear-gradient(to right, #dbeafe, #e9d5ff, #fbcfe8);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #374151;
+  text-align: center;
+}
+
+/* Card */
+.card {
+  background: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 320px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #4f46e5;
+}
+
+/* Counter Value */
+.counter-value {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+/* Button Styles */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-red {
+  background-color: #f87171;
+}
+.btn-red:hover {
+  background-color: #ef4444;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-green {
+  background-color: #34d399;
+}
+.btn-green:hover {
+  background-color: #10b981;
+}
+
+.btn-purple {
+  background-color: #8b5cf6;
+  width: 100%;
+  margin-top: 10px;
+}
+.btn-purple:hover {
+  background-color: #7c3aed;
+}
+
+/* Inputs */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+.input-field:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 4px #c4b5fd;
+}
+
+/* Note */
+.note {
+  font-size: 13px;
+  margin-top: 10px;
+  color: #6b7280;
 }
